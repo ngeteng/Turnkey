@@ -124,7 +124,7 @@ class EVMBot {
         logger.success(`Total Transaksi Berhasil: ${totalSuccess}`);
         if (totalFailed > 0) logger.warn(`Total Transaksi Gagal: ${totalFailed}`);
 
-        const summaryMessage = `✅ <b>Laporan Eksekusi Selesai</b> ✅\n\n<b>Waktu:</b> ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}\n\n📊 <b>Hasil:</b>\n- Wallet Diproses: <code>${this.wallets.length}</code>\n- Transaksi Berhasil: <code>${totalSuccess}</code>\n- Transaksi Gagal: <code>${totalFailed}</code>`;
+        const summaryMessage = `✅ <b>Laporan Turnkey</b> ✅\n\n<b>Waktu:</b> ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}\n\n📊 <b>Hasil:</b>\n- Wallet Diproses: <code>${this.wallets.length}</code>\n- Transaksi Berhasil: <code>${totalSuccess}</code>\n- Transaksi Gagal: <code>${totalFailed}</code>`;
         await this.reporter.sendMessage(summaryMessage);
     }
 
@@ -134,8 +134,6 @@ class EVMBot {
         try {
             await this.provider.getBlockNumber();
             logger.success(`Koneksi ke RPC berhasil!`);
-            await this.reporter.sendMessage(`🚀 <b>Bot Dimulai</b> | Waktu: ${new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })}`);
-
             this.loadPrivateKeys();
             await this.displayBalances();
             await this.executeTransactionBatch();
