@@ -47,11 +47,6 @@
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
   },
-  "os": [
-    "darwin",
-    "linux",
-    "win32"
-  ],
   "preferGlobal": false,
   "private": false
 }
