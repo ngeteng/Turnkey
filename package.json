@@ -1,0 +1,57 @@
+{
+  "name": "turnkey-auto-bot",
+  "version": "1.0.0",
+  "description": "Automated bot for executing transactions on Ethereum Sepolia testnet with multiple wallets for airdrop farming",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js",
+    "format": "prettier --write *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikitoshi/Turnkey-Auto-Bot.git"
+  },
+  "keywords": [
+    "ethereum",
+    "sepolia",
+    "testnet",
+    "bot",
+    "automation",
+    "airdrop",
+    "crypto",
+    "blockchain",
+    "web3",
+    "ethers",
+    "transaction"
+  ],
+  "author": "vikitoshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikitoshi/Turnkey-Auto-Bot/issues"
+  },
+  "homepage": "https://github.com/vikitoshi/Turnkey-Auto-Bot#readme",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "eslint": "^8.55.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "os": [
+    "darwin",
+    "linux",
+    "win32"
+  ],
+  "preferGlobal": false,
+  "private": false
+}
